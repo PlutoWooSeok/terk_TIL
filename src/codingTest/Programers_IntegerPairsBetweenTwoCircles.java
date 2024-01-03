@@ -28,4 +28,13 @@ public class Programers_IntegerPairsBetweenTwoCircles {
 
 따라서 1부터 큰 원의 반지름까지의 x 범위를 설정하여 해당 x값에 따른 y값의 차이를 계속 더해 결과에 4배를 리턴하면 됩니다.
 
+*/
+
+//알게 된 부분
+/*
+이 문제를 통해
+Math.sqrt : 제곱근
+Math.ceil : 올림 (천장으로 ceiling)
+Math.floor : 내림 (바닥으로 floor)
+의 기능들의 사용법을 알게 됨
  */
