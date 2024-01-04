@@ -9,6 +9,5 @@ public class Ex3_4 {
         i = -10;
         i = -i;
         System.out.println(i);
-
     }
 }
