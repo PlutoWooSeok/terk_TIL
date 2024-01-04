@@ -11,8 +11,20 @@ Today I Learned
    * 프로그래머스/추억 점수 https://school.programmers.co.kr/learn/courses/30/lessons/176963
 <BR>
 <BR>
-### 2024.01.02
+### 2024.01.03
 ****
 1. 코딩테스트 문제풀이
    * 프로그래머스/두 원 사이의 정수쌍 https://school.programmers.co.kr/learn/courses/30/lessons/181187
-
+<BR>
+<BR>
+### 2024.01.04
+****
+1. 자바 이론
+   * 자바의 정석 chapter03. 연산자에 대한 개념 및 실습예제 풀어보기
+2. 자료구조
+   * 기본 알고리즘 - 세 값의 대소관계를 비교하여 최댓값/중앙값/최솟값을 구하는 알고리즘 연습
+3. 코딩테스트 문제 풀이
+   * 백준/공바꾸기_10813 https://www.acmicpc.net/problem/10813
+   * 백준/과제 안 내신 분..?_5597 https://www.acmicpc.net/problem/5597
+   * 백준/최소, 최대_10818 https://www.acmicpc.net/problem/10818
+   * 백준/최솟값 찾기_11003 https://www.acmicpc.net/problem/11003
