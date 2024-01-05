@@ -27,4 +27,9 @@ Today I Learned
    * 백준/공바꾸기_10813 https://www.acmicpc.net/problem/10813
    * 백준/과제 안 내신 분..?_5597 https://www.acmicpc.net/problem/5597
    * 백준/최소, 최대_10818 https://www.acmicpc.net/problem/10818
-   * 백준/최솟값 찾기_11003 https://www.acmicpc.net/problem/11003
+<BR>
+<BR>
+### 2024.01.05
+****
+1. 자료구조
+   * 기본 알고리즘 : 1-2 반복(while/for)
