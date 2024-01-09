@@ -42,4 +42,17 @@ Today I Learned
 2. 코딩테스트 문제 풀이
    * 백준/나머지_3052 https://www.acmicpc.net/problem/3052
  
-: 스프링 학습으로 기초 알고리즘 학습 및 백준 알고리즘 문제 1 SOL
+   : 스프링 학습으로 기초 알고리즘 학습 및 백준 알고리즘 문제 1 SOL
+<BR>
+<BR>
+
+### 2024.01.09
+****
+1. 코딩테스트 문제 풀이
+   * 백준/바구니 뒤집기_10811 https://www.acmicpc.net/problem/10811
+   * 백준/평균_1546 https://www.acmicpc.net/problem/1546
+   * 백준/문자와 문자열_27866 https://www.acmicpc.net/problem/27866
+   * 백준/단어 길이 재기_2743 https://www.acmicpc.net/problem/2743
+   * 백준/문자열_9086 https://www.acmicpc.net/problem/9086
+2. 자료구조
+   * 기본 알고리즘 : 논리연산, 다중루프 연습
