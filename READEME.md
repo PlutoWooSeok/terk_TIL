@@ -63,4 +63,5 @@ Today I Learned
 1. 코딩테스트 문제 풀이
    * 프로그래머스/문자을 정수로 바꾸기 https://school.programmers.co.kr/learn/courses/30/lessons/12925
    * 프로그래머스/약수의 합구하기 https://school.programmers.co.kr/learn/courses/30/lessons/12928
+   * 프로그래머스/최댓값 최솟값 https://school.programmers.co.kr/learn/courses/30/lessons/12939
    * 
