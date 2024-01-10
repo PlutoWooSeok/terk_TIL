@@ -56,3 +56,10 @@ Today I Learned
    * 백준/문자열_9086 https://www.acmicpc.net/problem/9086
 2. 자료구조
    * 기본 알고리즘 : 논리연산, 다중루프 연습
+<BR>
+<BR>
+
+### 2024.01.10
+1. 코딩테스트 문제 풀이
+   * 프로그래머스/문자을 정수로 바꾸기 https://school.programmers.co.kr/learn/courses/30/lessons/12925
+   * 
