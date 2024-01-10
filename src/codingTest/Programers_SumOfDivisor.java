@@ -14,6 +14,6 @@ public class Programers_SumOfDivisor {
                 sum += i;
             }
         }
-        System.out.println(sums);
+        System.out.println(sum);
     }
 }
