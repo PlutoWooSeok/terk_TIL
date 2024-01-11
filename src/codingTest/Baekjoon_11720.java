@@ -2,21 +2,39 @@ package codingTest;
 
 import java.util.Scanner;
 
-/*
-자바의 Scanner에는 char형을 받아 올 수 없다.
-따라서 위 문제를 진행하기 위해서는 String으로 입력을 받은 후 문자형으로 변환하는 과정이 필요하다.
- */
-
-public class Baekjoon_11654 {
+public class Baekjoon_11720 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String str = sc.next();
+/*        Scanner sc = new Scanner(System.in);
+        int numSize = sc.nextInt();
+        long num = sc.nextLong();
 
-        char c = str.charAt(0); //위 문제에서는 아스키코드를 하나씩 입력하기 떄문에 0번째 인덱스만 char형으로 변환한다.
+        int[] numArray = new int[numSize];
+        String cvtIntToStr = Long.toString(num);
+        String[] numSplit = cvtIntToStr.split("");
 
-        //문자를 숫자로 변환
-        int answer = (int) c;
+        int sum = 0;
+        for (int i = 0; i < numSize; i++) {
+            numArray[i] = Integer.parseInt(numSplit[i]);
+            sum += numArray[i];
+        }
 
-        System.out.println(answer);
+
+        System.out.println(sum);*/
+        // 위 방식은 런타임 에러가 났다.
+
+        Scanner in = new Scanner(System.in);
+
+        int N = in.nextInt();
+        String a = in.next();
+        in.close();
+
+        int sum = 0;
+
+        for(int i = 0; i < N; i++) {
+            sum += a.charAt(i)-'0';
+        }
+        System.out.print(sum);
+
+        //따라서 이전에 풀었던 아스키 코드를 이용하여 문제를 풀어보았다.
     }
 }
