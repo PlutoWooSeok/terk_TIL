@@ -11,7 +11,7 @@ public class Baekjoon_10809 {
 		int[] arr = new int[26];
 		
 		for(int i = 0; i < arr.length; i++) {
-			arr[i] = -1;
+			arr[i] = -1;	//배열 값을 -1 로 초기화
 		}
  
 		String S = in.nextLine();
