@@ -1,31 +1,25 @@
 package codingTest;
 
 import java.util.Scanner;
- 
-public class Baekjoon_10809 {
- 
+
+public class Baekjoon_2675 {
+
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
- 
- 
-		int[] arr = new int[26];
-		
-		for(int i = 0; i < arr.length; i++) {
-			arr[i] = -1;	//배열 값을 -1 로 초기화
-		}
- 
-		String S = in.nextLine();
- 
-		for(int i = 0; i < S.length(); i++) {
-			char ch = S.charAt(i);
-    
-			if(arr[ch - 'a'] == -1) {	// arr 원소 값이 -1 인 경우에만 초기화
-				arr[ch - 'a'] = i;
+
+		int T = in.nextInt();
+		for(int i = 0; i < T; i++) {
+
+			int R = in.nextInt();
+			String S = in.next();	// nextLine() 을 쓰면 error!
+
+			for(int j = 0; j < S.length(); j++) {
+				for(int k = 0; k < R; k++) {	// R 만큼 반복 출력
+					System.out.print(S.charAt(j));
+				}
 			}
-		}
- 
-		for(int val : arr) {	// 배열 출력
-			System.out.print(val + " ");
+
+			System.out.println();
 		}
 	}
 }
