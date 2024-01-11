@@ -64,3 +64,15 @@ Today I Learned
    * 프로그래머스/문자을 정수로 바꾸기 https://school.programmers.co.kr/learn/courses/30/lessons/12925
    * 프로그래머스/약수의 합구하기 https://school.programmers.co.kr/learn/courses/30/lessons/12928
    * 프로그래머스/최댓값 최솟값 https://school.programmers.co.kr/learn/courses/30/lessons/12939
+
+<BR>
+<BR>
+
+### 2024.01.10
+1. 코딩테스트 문제 풀이
+   * 백준/아스키코드_11654 https://acmicpc.net/status?user_id=plutoxxx1014&problem_id=11654&from_mine=1
+   * 백준/숫자의 합 https://www.acmicpc.net/problem/11720
+   * 백준/알파벳 찾기 https://www.acmicpc.net/problem/10809
+   * 백준/문자열 반복 https://www.acmicpc.net/problem/2675
+2. CS 스터디
+   * 운영체제 공룡책 강의 학습 및 노션 정리
