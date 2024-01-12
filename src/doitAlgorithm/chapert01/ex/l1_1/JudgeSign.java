@@ -1,4 +1,4 @@
-package doitAlgorithm.chapert01.ex.l1;
+package doitAlgorithm.chapert01.ex.l1_1;
 
 import java.util.Scanner;
 

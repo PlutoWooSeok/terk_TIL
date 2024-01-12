@@ -1,4 +1,4 @@
-package doitAlgorithm.chapert01.ex.l2;
+package doitAlgorithm.chapert01.ex.l1_2;
 
 public class Multi99Table {
     public static void main(String[] args) {

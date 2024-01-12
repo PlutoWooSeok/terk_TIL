@@ -1,4 +1,4 @@
-package doitAlgorithm.chapert01.ex.l1;
+package doitAlgorithm.chapert01.ex.l1_1;
 
 public class Max3m {
     static int max3(int a, int b, int c){
