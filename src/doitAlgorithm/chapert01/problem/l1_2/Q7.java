@@ -1,8 +1,8 @@
-package doitAlgorithm.chapert01.problem.l2;
+package doitAlgorithm.chapert01.problem.l1_2;
 
 import java.util.Scanner;
 
-public class Q6 {
+public class Q7 {
     public static void main(String[] args){
         Scanner stdIn = new Scanner(System.in);
 
@@ -11,15 +11,15 @@ public class Q6 {
         int n = stdIn.nextInt();
 
         int sum = 0;
-        int i =1;
-
-        while(i <=n) {
+        for (int i = 1 ; i<=n ; i++){
             sum += i;
-            i++;
         }
-        System.out.println("while문 종료 후 변수 i의 값은 "+i+"입니다.");
+        System.out.print("1");
+        for (int i = 2; i<=n ; i++){
+            System.out.print(" + " + i);
+        }
+        System.out.println(" = " + sum);
 
-        System.out.println("1부터 " +n+ "까지의 랍은 "+sum+"입니다.");
-
+        stdIn.close();
     }
 }

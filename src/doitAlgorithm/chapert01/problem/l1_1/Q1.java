@@ -1,4 +1,4 @@
-package doitAlgorithm.chapert01.problem.l1;
+package doitAlgorithm.chapert01.problem.l1_1;
 //네 값의 최댓값을 구하는 max4 메서드를 작성
 public class Q1 {
     static int max4(int a, int b, int c, int d){

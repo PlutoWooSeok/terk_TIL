@@ -1,4 +1,4 @@
-package doitAlgorithm.chapert01.problem.l1;
+package doitAlgorithm.chapert01.problem.l1_1;
 
 public class Q3 {
     static int min4(int a, int b, int c, int d){
