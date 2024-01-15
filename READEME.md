@@ -68,7 +68,7 @@ Today I Learned
 <BR>
 <BR>
 
-### 2024.01.10
+### 2024.01.11
 1. 코딩테스트 문제 풀이
    * 백준/아스키코드_11654 https://acmicpc.net/status?user_id=plutoxxx1014&problem_id=11654&from_mine=1
    * 백준/숫자의 합_11720 https://www.acmicpc.net/problem/11720
@@ -76,3 +76,16 @@ Today I Learned
    * 백준/문자열 반복_2675 https://www.acmicpc.net/problem/2675
 2. CS 스터디
    * 운영체제 공룡책 강의 학습 및 노션 정리
+   
+<BR>
+<BR>
+
+### 2024.01.15
+1. CS 스터디
+   * 운영체제 공룡책 강의 학습 및 노션 정리
+2. 자바 이론
+   * 자바의 정석 chapter04. 조건문과 반복문에 대한 이론 학습 및 예제 문제 풀어보기
+3. 코딩테스트
+   * 백준/단어의 개수_1152 https://www.acmicpc.net/problem/1152
+   * 
+ 
