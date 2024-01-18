@@ -98,4 +98,5 @@ Today I Learned
    * 백준/다이얼_5622 https://www.acmicpc.net/problem/5622
    * 백준/새싹_25083 https://www.acmicpc.net/problem/25083
    * 백준/그대로 출력_11718 https://www.acmicpc.net/problem/11718
- 
+2. CS 스터디
+   * 운영체제 공룡책 강의 학습(chapter 3-1) 및 노션 정리
