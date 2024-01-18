@@ -88,4 +88,12 @@ Today I Learned
 3. 코딩테스트
    * 백준/단어의 개수_1152 https://www.acmicpc.net/problem/1152
 
+
+<BR>
+<BR>
+
+### 2024.01.18
+1. 코딩테스트
+   * 백준/상수_2908 https://www.acmicpc.net/problem/2908
+   * 백준/다이얼_5622 https://www.acmicpc.net/problem/5622
  
