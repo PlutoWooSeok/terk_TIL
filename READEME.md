@@ -96,5 +96,6 @@ Today I Learned
 1. 코딩테스트
    * 백준/상수_2908 https://www.acmicpc.net/problem/2908
    * 백준/다이얼_5622 https://www.acmicpc.net/problem/5622
+   * 백준/새싹_25083 https://www.acmicpc.net/problem/25083
    * 백준/그대로 출력_11718 https://www.acmicpc.net/problem/11718
  
