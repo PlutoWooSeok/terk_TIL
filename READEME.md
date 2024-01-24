@@ -58,16 +58,16 @@ Today I Learned
    * 기본 알고리즘 : 논리연산, 다중루프 연습
 <BR>
 <BR>
-
+****
 ### 2024.01.10
 1. 코딩테스트 문제 풀이
    * 프로그래머스/문자을 정수로 바꾸기 https://school.programmers.co.kr/learn/courses/30/lessons/12925
    * 프로그래머스/약수의 합구하기 https://school.programmers.co.kr/learn/courses/30/lessons/12928
    * 프로그래머스/최댓값 최솟값 https://school.programmers.co.kr/learn/courses/30/lessons/12939
-
 <BR>
 <BR>
 
+**** 
 ### 2024.01.11
 1. 코딩테스트 문제 풀이
    * 백준/아스키코드_11654 https://acmicpc.net/status?user_id=plutoxxx1014&problem_id=11654&from_mine=1
@@ -76,10 +76,10 @@ Today I Learned
    * 백준/문자열 반복_2675 https://www.acmicpc.net/problem/2675
 2. CS 스터디
    * 운영체제 공룡책 강의 학습 및 노션 정리
-   
 <BR>
 <BR>
 
+****
 ### 2024.01.15
 1. CS 스터디
    * 운영체제 공룡책 강의 학습 및 노션 정리
@@ -87,11 +87,10 @@ Today I Learned
    * 자바의 정석 chapter04. 조건문과 반복문에 대한 이론 학습 및 예제 문제 풀어보기
 3. 코딩테스트
    * 백준/단어의 개수_1152 https://www.acmicpc.net/problem/1152
-
-
 <BR>
 <BR>
 
+****
 ### 2024.01.18
 1. 코딩테스트
    * 백준/상수_2908 https://www.acmicpc.net/problem/2908
@@ -100,3 +99,15 @@ Today I Learned
    * 백준/그대로 출력_11718 https://www.acmicpc.net/problem/11718
 2. CS 스터디
    * 운영체제 공룡책 강의 학습(chapter 3-1) 및 노션 정리
+<BR>
+<BR>
+
+****
+### 2024.01.24
+1. 코딩 테스트 
+   * 백준/행렬 덧셈_2738 https://www.acmicpc.net/problem/2738 
+   * 백준/최댓값_2566 https://www.acmicpc.net/problem/2566
+   * 백준/세로읽기_10798 https://www.acmicpc.net/problem/10798
+   * 백준/색종이_2563 https://www.acmicpc.net/problem/2563
+2. CS 스터디
+   * 운영체제 공룡책 강의 학습(chapter 3) 및 노션 정리
