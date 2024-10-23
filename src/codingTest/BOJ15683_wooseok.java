@@ -1,167 +1,134 @@
 package codingTest;
+import java.util.*;
+import java.io.*;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.StringTokenizer;
+class CCTV {
+    int x, y, type;
 
-class cctv {
-    int x,y, type;
-
-    public cctv(int x, int y, int type) {
+    public CCTV(int x, int y, int type) {
         this.x = x;
         this.y = y;
         this.type = type;
     }
 }
 
-public class BOJ1568_wooseok {
-    public static int N, M;
-    public static int[][] map;
-    public static int[][] copyMap;
-    public static int[] output;
-    public static ArrayList<cctv> cctvList;
+public class BOJ15683_wooseok {
+    static int N, M;
+    static int[][] map;
+    static List<CCTV> cctvs = new ArrayList<>();
+    static int minBlindSpots = Integer.MAX_VALUE;
 
-    public static int[] dx = {-1, 0, 1, 0};
-    public static int[] dy = {0, -1, 0, 1};
-
-    public static int answer = Integer.MAX_VALUE;
+    // 각 방향 (우, 하, 좌, 상)
+    static int[] dx = { 0, 1, 0, -1 };
+    static int[] dy = { 1, 0, -1, 0 };
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
 
-        String[] input = br.readLine().split(" ");
-        N = Integer.parseInt(input[0]);
-        M = Integer.parseInt(input[1]);
+        N = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
 
         map = new int[N][M];
-        cctvList = new ArrayList<>();
 
-        // N행 M열의 맵 정보를 입력받음
         for (int i = 0; i < N; i++) {
-            input = br.readLine().split(" ");
+            st = new StringTokenizer(br.readLine());
             for (int j = 0; j < M; j++) {
-                map[i][j] = Integer.parseInt(input[j]);
-
-                // CCTV를 발견하면 CCTV 리스트에 추가
+                map[i][j] = Integer.parseInt(st.nextToken());
                 if (map[i][j] >= 1 && map[i][j] <= 5) {
-                    cctvList.add(new cctv(i, j, map[i][j]));
+                    // CCTV가 있는 위치를 리스트에 저장
+                    cctvs.add(new CCTV(i, j, map[i][j]));
                 }
             }
         }
 
-        //cctc의 방향 경우의 수를 계산할 배열 초기화
-        output = new int[cctvList.size()];
+        // CCTV 배치를 위한 DFS 시작
+        dfs(0, map);
 
-        // 경우의 수를 계산하는 함수 호출
-        dfs(0);
-
-        // 최종적으로 계산된 최소 사각지대 크기를 출력
-        System.out.println(answer);
+        System.out.println(minBlindSpots);
     }
 
-    private static void dfs(int depth) {
-        if (depth == cctvList.size()) {
-            // 모든 cctv의 방향이 결정된 경우 감시 영역을 계산
-            check();
-            return;
-        }
+    // CCTV 감시 범위를 지도에 그리는 함수
+    static void watch(int[][] tempMap, int x, int y, int dir) {
+        dir %= 4; // 4방향 기준으로 회전
 
-        //cctv 종류에 따라 감시가 가능한 방향을 설정하고 탐색
-        cctv cctv = cctvList.get(depth);
-        int type = cctv.type;
-
-        //각 cctv의 타입에 따라 가능한 방향의 경우의 수 처리
-        for (int i = 0; i < 4; i++) {
-            output[depth] = i;
-            dfs(depth + 1);
-        }
-    }
-
-    private static void check() {
-        // 현재 맵을 복사하여 새로운 맵을 생성
-        copyMap = new int[N][M];
-
-        //기존 map을 copyMap으로 복사( 감시 영역 계산 전 원본을 보존하기 위해)
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < M; j++) {
-                copyMap[i][j] = map[i][j];
-            }
-        }
-
-
-        //모든 cctv에 대한 감시 영역을 설정
-        for (cctv cctv : cctvList) {
-            int type = cctv.type;
-            int x = cctv.x;
-            int y = cctv.y;
-
-            //각 cctv의 유형에 따른 감시 방향 설정
-            switch (type) {
-                case 1: // 한 방향으로만 감시 (상, 우, 하, 좌)
-                    for (int i = 0; i < 4; i++) {
-                        watch(x, y, i);
-                    }
-                break;
-                case 2: // 두 방향 (상하, 좌우)
-                    watch(x, y, 0); // 상
-                    watch(x, y, 2); // 하
-                break;
-                case 3: // 직각 방향 (상우, 우하, 하좌, 좌상)
-                    watch(x, y, 0); // 상
-                    watch(x, y, 1); // 우
-                break;
-                case 4: // 세 방향
-                    watch(x, y, 0); // 상
-                    watch(x, y, 1); // 우
-                    watch(x, y, 2); // 하
-                break;
-                case 5: // 네 방향 모두 감시
-                    for (int i = 0; i < 4; i++) {
-                        watch(x, y, i);
-                    }
-                break;
-            }
-        }
-
-        //사각지대 크기 계산
-        int blindSpot = 0;
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < M; j++) {
-                //사각지대는 0으로 나타난 구역
-                if (copyMap[i][j] == 0) {
-                    blindSpot++;
-                }
-            }
-        }
-
-        //최소 사각지대 크기로 answer 업데이트
-        answer = Math.min(answer, blindSpot);
-    }
-
-    private static void watch(int x, int y, int dir) {
-        //방향 배열 dx, dy를 이용하여 cctv가 감시할 수 있는 범위 확장
         while (true) {
             x += dx[dir];
             y += dy[dir];
 
-            //맵 밖으로 나가면 종료
-            if (x < 0 || y < 0 || x >= N || y >= M) break;
+            if (x < 0 || x >= N || y < 0 || y >= M || tempMap[x][y] == 6) {
+                // 맵의 경계나 벽(6)을 만나면 종료
+                break;
+            }
 
-            //벽(6)을 만나면 종료
-            if (map[x][y] == 6) break;
-
-            //cctv의 감시 영역을 7로 표시(감시 영역 표시)
-            if (copyMap[x][y] == 0) {
-                copyMap[x][y] = 7;
+            if (tempMap[x][y] == 0) {
+                tempMap[x][y] = 7; // 감시 영역을 7로 표시
             }
         }
     }
 
+    // 현재 CCTV 상태에서 감시 영역을 체크하는 함수
+    static int[][] check(int[][] map, CCTV cctv, int dir) {
+        int[][] tempMap = new int[N][M];
 
+        for (int i = 0; i < N; i++) {
+            tempMap[i] = map[i].clone();
+        }
+
+        if (cctv.type == 1) {
+            watch(tempMap, cctv.x, cctv.y, dir);
+        } else if (cctv.type == 2) {
+            watch(tempMap, cctv.x, cctv.y, dir);
+            watch(tempMap, cctv.x, cctv.y, dir + 2); // 반대방향
+        } else if (cctv.type == 3) {
+            watch(tempMap, cctv.x, cctv.y, dir);
+            watch(tempMap, cctv.x, cctv.y, dir + 1); // 직각 방향
+        } else if (cctv.type == 4) {
+            watch(tempMap, cctv.x, cctv.y, dir);
+            watch(tempMap, cctv.x, cctv.y, dir + 1);
+            watch(tempMap, cctv.x, cctv.y, dir + 2); // 3방향
+        } else if (cctv.type == 5) {
+            for (int i = 0; i < 4; i++) {
+                watch(tempMap, cctv.x, cctv.y, dir + i); // 4방향 모두
+            }
+        }
+
+        return tempMap;
+    }
+
+    // DFS를 통해 CCTV 방향을 결정하고 최소 사각지대를 계산하는 함수
+    static void dfs(int idx, int[][] map) {
+        if (idx == cctvs.size()) {
+            // 사각지대 계산
+            minBlindSpots = Math.min(minBlindSpots, countBlindSpots(map));
+            return;
+        }
+
+        CCTV cctv = cctvs.get(idx);
+        int[][] tempMap;
+
+        for (int dir = 0; dir < 4; dir++) {
+            tempMap = check(map, cctv, dir);
+            dfs(idx + 1, tempMap); // 다음 CCTV로 이동
+            // 타입 5는 모든 방향이 동일하므로 1회만 체크
+            if (cctv.type == 5) break;
+            // 타입 2는 2번의 방향만 필요 (반대 방향만 의미 있음)
+            if (cctv.type == 2 && dir == 1) break;
+        }
+    }
+
+    // 사각지대(감시되지 않은 영역)를 세는 함수
+    static int countBlindSpots(int[][] map) {
+        int count = 0;
+
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < M; j++) {
+                if (map[i][j] == 0) {
+                    count++;
+                }
+            }
+        }
+
+        return count;
+    }
 }
-
-
-
-
