@@ -1,2 +1,4 @@
-package codingTest;public class PCCP_3_wooseok {
+package codingTest;
+
+public class PCCP_3_wooseok {
 }
