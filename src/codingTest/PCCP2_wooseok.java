@@ -13,7 +13,7 @@ diff > level : diff - level 만큼 실패, 실패할때마다 time_cur만큼 시
 
 
  */
-public class programmers_PCCP2_wooseok {
+public class PCCP2_wooseok {
 
     public static void main(String[] args) {
         int diffs[] = {1, 5, 3};
