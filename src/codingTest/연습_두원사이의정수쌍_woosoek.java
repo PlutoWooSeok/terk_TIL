@@ -1,6 +1,5 @@
 package codingTest;
 
-import java.util.*;
 
 public class 연습_두원사이의정수쌍_woosoek {
     public static long solution(int r1, int r2) {

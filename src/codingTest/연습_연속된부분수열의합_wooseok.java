@@ -45,4 +45,5 @@ public class 연습_연속된부분수열의합_wooseok {
 
         System.out.println(Arrays.toString(answer));
     }
+
 }

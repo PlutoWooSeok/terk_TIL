@@ -25,13 +25,13 @@ public class PCCP_수레움직이기_wooseok {
 
     /**
      * @param maze 미로를 나타내는 2D 배열
-     * maze[i][j]의 의미:
-     * - 0: 빈칸
-     * - 1: 빨간 수레의 시작 칸
-     * - 2: 파란 수레의 시작 칸
-     * - 3: 빨간 수레의 도착 칸
-     * - 4: 파란 수레의 도착 칸
-     * - 5: 벽
+     *             maze[i][j]의 의미:
+     *             - 0: 빈칸
+     *             - 1: 빨간 수레의 시작 칸
+     *             - 2: 파란 수레의 시작 칸
+     *             - 3: 빨간 수레의 도착 칸
+     *             - 4: 파란 수레의 도착 칸
+     *             - 5: 벽
      * @return 빨간 수레와 파란 수레가 각각 도착 지점에 도달하는 최소 이동 횟수
      */
     public static int solution(int[][] maze) {
@@ -162,3 +162,4 @@ public class PCCP_수레움직이기_wooseok {
         System.out.println(solution(maze)); // 최소 이동 횟수 출력
     }
 }
+

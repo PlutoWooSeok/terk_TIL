@@ -44,3 +44,4 @@ public class 연습_요격시스템_wooseok {
         System.out.println(solution(targets)); // 기대 결과: 최소 요격 미사일 수
     }
 }
+
